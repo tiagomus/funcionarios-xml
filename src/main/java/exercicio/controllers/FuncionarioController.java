@@ -1,6 +1,7 @@
 package exercicio.controllers;
 
 import exercicio.entities.Funcionario;
+import exercicio.services.FuncionarioService;
 
 import java.util.Scanner;
 
@@ -16,6 +17,9 @@ public class FuncionarioController {
 
         System.out.println("Digite o salario do Funcionario: ");
         funcionario.setSalario(scanner.nextDouble());
+
+        var funcionarioService = new FuncionarioService();
+        funcionarioService.salvarDados(funcionario);
 
     }
 

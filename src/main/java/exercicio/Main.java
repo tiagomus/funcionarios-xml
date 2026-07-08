@@ -1,5 +1,6 @@
 package exercicio;
 
+import exercicio.controllers.FuncionarioController;
 import exercicio.entities.Funcionario;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -7,7 +8,9 @@ import exercicio.entities.Funcionario;
 public class Main {
     static void main() {
 
+    var controller = new FuncionarioController();
 
+    controller.cadastrarFuncionario();
 
  }
 

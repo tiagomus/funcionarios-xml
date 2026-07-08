@@ -13,7 +13,7 @@ public class FuncionarioService {
 
             var filewriter = new FileWriter("D:\\aula01\\funcionario_" + funcionario.getId() + ".xml");
             var printwriter = new PrintWriter(filewriter);
-            printwriter.write("<?xml version='1.0' ebcoding='UTF-8'?>");
+            printwriter.write("<?xml version='1.0' encoding='UTF-8'?>");
             printwriter.write("<funcionario>");
             printwriter.write("<id>" + funcionario.getId() + "</id>");
             printwriter.write("<nome>" + funcionario.getNome()+ "</nome>");
